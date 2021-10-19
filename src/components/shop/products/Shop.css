@@ -1,0 +1,29 @@
+
+
+.shop-title {
+   font-size: 50px;
+}
+.products {
+    justify-content: center;
+}
+.product {
+    border: 1px solid rgb(121, 117, 117);
+    text-align: center;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.productTitle {
+    font-size: 14px;
+}
+

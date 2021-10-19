@@ -1,0 +1,30 @@
+
+.home-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+ .home-content h1, h3 {
+   text-align: center;
+   color: rgb(34, 32, 32);
+   font-weight: bold;
+   animation: title 1s backwards;
+   transition: all 1s ease-in-out;
+}
+
+.home-content h1 {
+    font-size: 45px;
+}
+
+.home-content h3 {
+    font-size: 35px;
+}
+
+
+.home-content h3 span {
+    color: rgb(45,136,255);
+    padding-left: 4px;
+  
+}

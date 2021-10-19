@@ -21,14 +21,14 @@ button {
 }
 
 .plus {
-    background-color: rgb(216, 40, 40);
+    background-color: rgb(32, 32, 218);
     padding: 20px;
     margin: 0 25px;
 
 }
 
 .minus {
-    background-color: rgb(32, 32, 218);
+    background-color: rgb(216, 40, 40);
     padding: 20px 22px;
     margin: 0 25px;
 
