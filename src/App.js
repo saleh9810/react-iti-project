@@ -5,6 +5,7 @@ import MainNavbar from "./components/navbar/Navbar";
 import Shop from  './components/shop/products/Shop'
 import Home from "./components/home/Home";
 import ProductDeatils from "./components/shop/productDetails/ProductDeatils";
+import TodoList from "./components/todo/TodoList";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
 
           <Route exact path="/shop/:id">
             <ProductDeatils />
+          </Route>
+
+          <Route exact path="/todo">
+            <TodoList />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -1,36 +1,26 @@
 import "./Counter.css";
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment, reset } from "../../redux/actions";
 
 const Counter = () => {
 
-  const [count, setCount] = useState(0);
+  const count = useSelector((state) => state.counterReducer.count);
 
-  const minusCount = () => {
-    if (count < 1) {
-      setCount(0);
-    } else {
-      setCount(count - 1);
-    }
-  };
+  const  dispatch = useDispatch();
 
-  const plusCount = () => {
-    setCount(count + 1);
-  };
 
-  const resetCount = () => {
-    setCount(0);
-  };
+  
 
   return (
     <div className="cointer">
       <h2 className="count"> {count} </h2>
-      <button onClick={plusCount} className="plus">
+      <button onClick={() => dispatch(increment(1))} className="plus">
         +
       </button>
-      <button onClick={minusCount} className="minus">
+      <button onClick={() => dispatch(decrement(1))} className="minus">
         -
       </button>
-      <button onClick={resetCount} className="reset">
+      <button onClick={() => dispatch(reset(0))}  className="reset">
         reset
       </button>
     </div>

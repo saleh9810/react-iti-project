@@ -1,0 +1,8 @@
+ul {
+    list-style: none;
+}
+
+.remove {
+    float: right;
+    height: 73px;
+}

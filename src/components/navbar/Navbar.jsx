@@ -12,7 +12,8 @@ const MainNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
             <Link className="link me-4" to="/counter"> Counter </Link>
-            <Link className="link" to="/shop"> Shop </Link>
+            <Link className="link me-4" to="/shop"> Shop </Link>
+            <Link className="link" to="/todo"> Todo </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
