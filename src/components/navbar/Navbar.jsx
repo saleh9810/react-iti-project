@@ -13,7 +13,11 @@ const MainNavbar = () => {
             <Nav className="ms-auto">
             <Link className="link me-4" to="/counter"> Counter </Link>
             <Link className="link me-4" to="/shop"> Shop </Link>
-            <Link className="link" to="/todo"> Todo </Link>
+            <Link className="link me-4" to="/todo"> Todo </Link>
+            <Link className="link me-4" to="/login"> Login </Link>
+            <Link className="link" to="/register"> Register </Link>
+
+
             </Nav>
           </Navbar.Collapse>
         </Container>

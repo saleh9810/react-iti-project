@@ -6,6 +6,8 @@ import Shop from  './components/shop/products/Shop'
 import Home from "./components/home/Home";
 import ProductDeatils from "./components/shop/productDetails/ProductDeatils";
 import TodoList from "./components/todo/TodoList";
+import LoginForm from "./components/login/Login";
+import Register from "./components/register/Register";
 
 function App() {
   return (
@@ -29,6 +31,14 @@ function App() {
 
           <Route exact path="/todo">
             <TodoList />
+          </Route>
+
+          <Route exact path="/login">
+            <LoginForm />
+          </Route>
+
+          <Route exact path="/register">
+           <Register />
           </Route>
         </Switch>
       </BrowserRouter>
