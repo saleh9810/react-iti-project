@@ -16,10 +16,11 @@ import { ErrorMessage } from "formik";
               className={className}
               {...formikField.field}
               defaultChecked={formikField.field.value}
+              
             />
              <ErrorMessage name={name}>
       {(errMessage) => {
-        return <div className="alert-danger">{errMessage}</div>;
+        return <div className="alert alert-danger">{errMessage}</div>;
       }}
     </ErrorMessage>
           </>

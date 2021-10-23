@@ -1,8 +1,9 @@
 import React from "react";
-import { Formik, Field, Form, } from "formik";
+import { Formik, Form, } from "formik";
 import FormArray from "./FormArray";
 import * as Yup from "yup";
 import RegisterField from "./RegisterField";
+import { SelectField } from "./SelectField";
 
 const Register = () => {
   const initialValues = {
@@ -71,17 +72,20 @@ const Register = () => {
 
 />
 
-<label htmlFor="gender">Gender</label>
-<Field className="form-select w-25 my-3" as="select" name="gender">
-<option value=""></option>
-  <option value="male">male</option>
-  <option value="female">female</option>
-</Field>
+<SelectField 
+
+  name="gender"
+  label="gender"
+  className="form-select"
+  option1="male"
+  option2="female"
+/>
 
 <RegisterField
   label="Active"
   name="active"
   type="checkbox"
+  className="mt-3 mb-3"
   
 />
 
@@ -94,7 +98,7 @@ const Register = () => {
 
 
 
-<button type="submit" className="btn btn-primary mt-3 d-block">submit</button>
+<button type="submit" className="btn btn-primary mt-3 mb-4  d-block">submit</button>
 </Form>
 
          );}}
