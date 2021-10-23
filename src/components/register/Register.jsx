@@ -77,8 +77,7 @@ const Register = () => {
   name="gender"
   label="gender"
   className="form-select"
-  option1="male"
-  option2="female"
+  options={["","male", "female"]}
 />
 
 <RegisterField

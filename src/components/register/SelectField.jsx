@@ -1,7 +1,7 @@
 import { Field } from "formik";
 import { ErrorMessage } from "formik";
 
-export const SelectField = ({name, className, label, option1, option2,}) => {
+export const SelectField = ({name, className, label, options,}) => {
     return (
         <Field name={name}>
           {(formikField) => {
@@ -14,9 +14,9 @@ export const SelectField = ({name, className, label, option1, option2,}) => {
                   {...formikField.field}
                   defaultChecked={formikField.field.value}  
                 >
-                   <option value=""></option>
-                  <option value={option1}>{option1}</option>
-                  <option value={option2}>{option2}</option>
+                   {options.map(optipn => {
+                      return  <option key={optipn} value={optipn}>{optipn}</option>
+                   })}
                     </select>
                  <ErrorMessage name={name}>
           {(errMessage) => {
